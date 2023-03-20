@@ -1,20 +1,19 @@
 <script>
 
     import Terminal from "./terminal.svelte";
-
+    import '../app.css'
 
 </script>
 
-<div class="background"></div>
+<div>
 
 <Terminal>some text</Terminal>
 
+</div>
+
 <style>
-    .background {
-        background-color: black;
-        position: absolute;
-        top: 0;
-        height: 100vh;
+    div {
+        height: 100%;
         width: 100%;
     }
 </style>
