@@ -11,11 +11,11 @@
 <style>
     .terminal {
         background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 15px;
+        border-radius: 13px;
         height: 80%;
         width: auto;
         color: #fff;
-        margin: 3% 10%;
+        margin: auto;
     }
 
     .header {
