@@ -8,12 +8,13 @@
 
 <div>
   <Terminal>
-    <Prompt path="~/" folder="" command="ls"/>
+    <Prompt path="~" folder="" command="ls"/>
     <Result result="Desktop    Downloads  Music Videos
     Documents  Pictures  Public"/>
-    <Prompt path="~/" folder="" command="cd Documents"/>
+    <Prompt path="~" folder="" command="cd Documents"/>
     <Prompt path="~/Documents/" folder="CV" command="ls"/>
     <Result result="name education"/>
+    <Prompt path="~/Documents/" folder="CV" command="cat name"/>
     <Pida />
   </Terminal>
 </div>
