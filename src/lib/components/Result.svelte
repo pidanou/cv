@@ -13,6 +13,7 @@
     }
 
     .result {
-        margin-left: 0.3em;
+        margin-left: 0.8em;
     } 
+
 </style>

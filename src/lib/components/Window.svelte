@@ -1,5 +1,6 @@
 <script>
   import { draggable } from "@neodrag/svelte";
+
   export let tabName;
 </script>
 
@@ -43,17 +44,17 @@
 
   .red {
     background-color: rgb(190, 60, 42);
-    height: 0.6em;
+    height: 0.8em;
     border-radius: 50%;
     border: none;
-    min-width: 0.6em;
+    width: 0.8em;
     cursor: pointer;
   }
 
   .yellow {
     background-color: rgb(231, 149, 56);
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.8em;
+    height: 0.8em;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -61,8 +62,8 @@
 
   .green {
     background-color: rgb(72, 194, 88);
-    width: 0.6em;
-    height: 0.6em;
+    width: 0.8em;
+    height: 0.8em;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -72,15 +73,27 @@
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     height: 80%;
-    width: 60%;
+    width: 50%;
     color: #fff;
     margin: 3% 10%;
     font-family: 'SF Mono', sans-serif;
   }
 
   .page {
-    height: 100%;
+    height: 95%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
   }
+
+  .page::-webkit-scrollbar {
+  display: none;
+  }
+
+  .page > :first-child { margin-top: auto }
 
   .tab {
     order: 1;

@@ -1,8 +1,10 @@
 <script>
   import Window from "$lib/components/Window.svelte";
+
+  export let tabName;
 </script>
 
-<Window tabName="pidanoueang@cv:~">
+<Window tabName={tabName}>
   <slot />
 </Window>
 
