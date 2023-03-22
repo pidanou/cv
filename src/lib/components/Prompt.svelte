@@ -6,14 +6,14 @@
   export let path;
   export let counter;
 
-  let animation = false;
-
   let display;
 
   export let show;
 
   function changeState() {
-    counter++;
+    setTimeout(() => {
+      counter++;
+    }, 300);
   }
 </script>
 
@@ -23,8 +23,7 @@
     <p class="cli-input path" id="last">{folder}</p>
     <Typewriter
       --cursor-color={"white"}
-      delay={100}
-      unwriteInterval={50}
+      delay={300}
       mode={"concurrent"}
       on:done={changeState}
       interval={[30, 56, 30, 45, 150]}
