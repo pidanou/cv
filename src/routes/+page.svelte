@@ -17,6 +17,7 @@
 <div>
   <Terminal tabName={terminalTitle}>
     <Blank />
+    <Result show={counter >= 7} result="WIP" />
     <Pida show={counter >= 7} />
     <Prompt
       show={counter >= 6}
