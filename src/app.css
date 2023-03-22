@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(57, 62, 83);
     width: auto;
     height: 100vh;
     overflow: hidden;
+    background-image: url(/src/lib/images/OS-X-Yosemite.jpg);
+    background-size: cover;
 }
