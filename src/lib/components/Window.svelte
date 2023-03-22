@@ -19,7 +19,7 @@
 </div>
 
 <style>
-  @import url('https://fonts.cdnfonts.com/css/sf-mono');
+  @import url("https://fonts.cdnfonts.com/css/sf-mono");
   :global(button) {
     padding: 0;
   }
@@ -74,9 +74,9 @@
     border-radius: 15px;
     height: 80%;
     width: 50%;
+    min-width: 700px;
     color: #fff;
-    margin: 3% 10%;
-    font-family: 'SF Mono', sans-serif;
+    font-family: "SF Mono", sans-serif;
   }
 
   .page {
@@ -86,14 +86,16 @@
     flex-direction: column-reverse;
     overflow-y: auto;
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
+    -ms-overflow-style: none; /* IE and Edge */
   }
 
   .page::-webkit-scrollbar {
-  display: none;
+    display: none;
   }
 
-  .page > :first-child { margin-top: auto }
+  .page > :first-child {
+    margin-top: auto;
+  }
 
   .tab {
     order: 1;

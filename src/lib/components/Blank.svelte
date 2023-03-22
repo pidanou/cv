@@ -1,9 +1,7 @@
-<div>
-
-</div>
+<div />
 
 <style>
-    div {
-        height: 100%;
-    }
+  div {
+    height: 100%;
+  }
 </style>

@@ -6,56 +6,67 @@
   import Result from "$lib/components/Result.svelte";
   import Clone from "$lib/components/Asciiart-clone.svelte";
   import Blank from "$lib/components/Blank.svelte";
-  import Loading from "$lib/components/Asciiart-loading.svelte"
 
-  let folderList = ["~","~/Documents", "~/Documents"];
+  let folderList = ["~", "~/Documents", "~/Documents"];
 
-  let counter = 0; 
+  let counter = 0;
 
-  let overflow = 0;
-
-  let terminalTitle = "pidanoueang@computer:~"
-
-  let focus = 0;
-
-  function handleEnterKeydown(e) {
-    if (e.key != "Enter") {
-      return
-    }
-    if (counter >= folderList.length){
-      overflow ++
-      focus++
-      return
-    }
-    focus++
-  }
-
-  $:dynCounter = Array(overflow);
-
+  let terminalTitle = "pidanoueang@computer:~";
 </script>
-
-<svelte:window on:keydown={handleEnterKeydown}/>
 
 <div>
   <Terminal tabName={terminalTitle}>
-    {#each dynCounter as _, i}
-    {#if counter>folderList.length}
-    <Prompt path="~/Documents/" folder="CV" command=""  bind:counter={counter} />
-    {/if}
-    {/each}
-    <Pida />
-    <Prompt show={focus>=5} path="~/Documents/" folder="CV" command="cat name" bind:counter={counter} />
-    <Result result="name education"/>
-    <Prompt show={focus>=4} path="~/Documents/" folder="CV" command="ls" bind:counter={counter} />
-    <Prompt show={focus>=3} path="~/Documents/" folder="CV" command="cd Documents" bind:counter={counter} />
-    <Result result="Desktop    Downloads  Music Videos
-    Documents  Pictures  Public"/>
-    <Prompt show={focus>=2} path="~/Documents/" folder="CV" command="ls" bind:counter={counter} />
-    <Clone/>
-    <Prompt show={focus>=1} path="~" folder="/Documents" command="git clone https://github.com/pidanou/cv.git" bind:counter={counter} />
-    <Prompt show={focus>=0} path="~" folder="" command="cd Documents" bind:counter={counter} />
-    <Loading/>
-    <Prompt typewritingAuto={true} focus={true} path="~" folder="" command="cat README.md"/>
+    <Blank />
+    <Pida show={counter >= 7} />
+    <Prompt
+      show={counter >= 6}
+      path="~/Documents/"
+      folder="CV"
+      command="cat name"
+      bind:counter
+    />
+    <Result show={counter >= 7} result="name education" />
+    <Prompt
+      show={counter >= 5}
+      path="~/Documents/"
+      folder="CV"
+      command="ls"
+      bind:counter
+    />
+    <Prompt
+      show={counter >= 4}
+      path="~/Documents/"
+      folder="CV"
+      command="cd Documents"
+      bind:counter
+    />
+    <Result
+      show={counter >= 4}
+      result="Desktop    Downloads  Music Videos
+    Documents  Pictures  Public"
+    />
+    <Prompt
+      show={counter >= 3}
+      path="~/Documents/"
+      folder="CV"
+      command="ls"
+      bind:counter
+    />
+    <Clone show={counter >= 2} bind:counter />
+    <Prompt
+      show={counter >= 1}
+      path="~"
+      folder="/Documents"
+      command="git clone https://github.com/pidanou/cv.git"
+      bind:counter
+    />
+    <Prompt
+      show={counter >= 0}
+      path="~"
+      folder=""
+      command="cd Documents"
+      bind:counter
+    />
   </Terminal>
 </div>
 

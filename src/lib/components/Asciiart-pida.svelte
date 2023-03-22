@@ -1,3 +1,8 @@
+<script>
+  export let show
+</script>
+
+{#if show}
 <div class="container">
   <pre>
   ______  _____ ______   ___   _   _  _____  _   _   _____   ___   _   _  _____ 
@@ -9,6 +14,7 @@
     
   </pre>
 </div>
+{/if}
 
 <style>
   pre {

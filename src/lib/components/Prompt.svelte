@@ -1,45 +1,39 @@
 <script>
-  import Typewriter from 'svelte-typewriter'
+  import Typewriter from "svelte-typewriter";
 
   export let command;
   export let folder;
   export let path;
   export let counter;
 
-  export let typewritingAuto = false;
+  let animation = false;
 
-  let animation = false
+  let display;
 
   export let show;
 
-  function handleEnterKeydown(e) {
-    if (show){
-      animation = true
-    }
+  function changeState() {
+    counter++;
   }
-
-  function changeState(){
-    counter++
-  }
-
-  
 </script>
 
-<svelte:window on:keydown={handleEnterKeydown}/>
-
-<div class="container">
-    <p class="cli-input path" id="first">{path}</p><p class="cli-input path" id="last">{folder}</p>
-    {#if !typewritingAuto}
-    <Typewriter disabled={!animation} mode={"concurrent"} cursor= {false} on:done={changeState}><p class="cli-input">{command}</p></Typewriter>
-    {:else}
-    <Typewriter mode={"concurrent"} cursor= {false} on:done={changeState}><p class="cli-input">{command}</p></Typewriter>
-    {/if}
-
-
-</div>
+{#if show}
+  <div class="container" style:display>
+    <p class="cli-input path" id="first">{path}</p>
+    <p class="cli-input path" id="last">{folder}</p>
+    <Typewriter
+      --cursor-color={"white"}
+      delay={100}
+      unwriteInterval={50}
+      mode={"concurrent"}
+      on:done={changeState}
+      interval={[30, 56, 30, 45, 150]}
+      ><p class="cli-input">{command}</p></Typewriter
+    >
+  </div>
+{/if}
 
 <style>
-
   p {
     margin: 0;
   }
