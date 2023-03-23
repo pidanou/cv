@@ -25,6 +25,7 @@
 		"@neodrag/svelte": "^2.0.3",
 		"gsap": "^3.11.5",
 		"scrollmagic": "^2.0.8",
+		"svelte-media-queries": "^1.5.4",
 		"svelte-typewriter": "^3.1.4"
 	}
 }

@@ -4,4 +4,5 @@ body {
     overflow: hidden;
     background-image: url(/src/lib/images/OS-X-Yosemite.jpg);
     background-size: cover;
+    margin: 0
 }
