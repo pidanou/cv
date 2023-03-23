@@ -39,7 +39,7 @@
 
   .container {
     display: flex;
-    flex-wrap: wrap;
+    min-height: 1.7em;
   }
   .cli-input {
     font-weight: 500;
