@@ -20,6 +20,7 @@
 <style>
   .container {
     display: flex;
+    flex-wrap: wrap;
   }
   .cli-input {
     font-weight: 500;

@@ -58,7 +58,7 @@
   }
 
   .mobile .page {
-    height: 100%;
+    height: 90%;
     width: 100%;
     margin: 0;
   }
@@ -115,14 +115,13 @@
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
     height: 80%;
-    width: 50%;
-    min-width: 700px;
+    width: 1024px;
     border-radius: 15px;
+    padding-bottom: 2em;
   }
 
   .page {
-    height: 95%;
-    margin-top: 1%;
+    height: 100%;
     display: flex;
     flex-direction: column-reverse;
     overflow-y: auto;
