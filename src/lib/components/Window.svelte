@@ -2,12 +2,24 @@
   import { draggable } from "@neodrag/svelte";
   import MediaQuery from "svelte-media-queries";
 
+  $: outerWidth = 0;
+  $: innerWidth = 0;
+  $: outerHeight = 0;
+  $: innerHeight = 0;
+
   export let tabName;
 </script>
 
+<svelte:window
+  bind:innerWidth
+  bind:outerWidth
+  bind:innerHeight
+  bind:outerHeight
+/>
+
 <MediaQuery query="(max-width: 1023px)" let:matches>
   {#if matches}
-    <div class="window mobile">
+    <div class="window mobile" style="height: {innerHeight}px;">
       <div class="header">
         <div class="tab"><div id="tabName">{tabName}</div></div>
         <div class="tributton">
@@ -53,7 +65,6 @@
     font-family: "SF Mono", sans-serif;
   }
   .window.mobile {
-    height: 100%;
     margin: 0;
   }
 
