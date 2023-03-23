@@ -1,18 +1,9 @@
 <script>
   import TerminalDesktop from "./terminalDesktop.svelte";
   import "../app.css";
-  import Pida from "$lib/components/Asciiart-pida.svelte";
-  import Prompt from "$lib/components/Prompt.svelte";
-  import Result from "$lib/components/Result.svelte";
-  import Clone from "$lib/components/Asciiart-clone.svelte";
-  import Blank from "$lib/components/Blank.svelte";
   import MediaQuery from "svelte-media-queries";
 
   let counter = 0;
-
-  function fast() {
-    counter = 100;
-  }
 
   let terminalTitle = "pidanoueang@computer:~";
 </script>

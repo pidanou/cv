@@ -20,7 +20,7 @@
 <style>
   .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .cli-input {
     font-weight: 500;
@@ -29,11 +29,13 @@
 
   .result {
     margin-left: 0.8em;
+    white-space: nowrap;
   }
 
   .folders {
     margin-left: 0.8em;
     color: rgb(33, 247, 62);
     font-weight: bold;
+    white-space: nowrap;
   }
 </style>

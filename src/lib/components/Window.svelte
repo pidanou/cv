@@ -37,7 +37,10 @@
 
 <MediaQuery query="(min-width: 1024px)" let:matches>
   {#if matches}
-    <div use:draggable={{ cancel: ".page" }} class="window desktop">
+    <div
+      use:draggable={({ cancel: ".page" }, { bounds: "parent" })}
+      class="window desktop"
+    >
       <div class="header">
         <div class="tab"><div id="tabName">{tabName}</div></div>
         <div class="tributton">

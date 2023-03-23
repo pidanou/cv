@@ -30,5 +30,6 @@
   p {
     margin: 0;
     margin-left: 10px;
+    white-space: nowrap;
   }
 </style>

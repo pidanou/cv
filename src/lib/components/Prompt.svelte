@@ -45,6 +45,7 @@
     font-weight: 500;
     padding: 2px;
     margin-bottom: 0.2em;
+    white-space: nowrap;
   }
 
   .path {
