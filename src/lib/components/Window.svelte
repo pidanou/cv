@@ -49,10 +49,8 @@
 
   .window {
     background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 15px;
     color: #fff;
     font-family: "SF Mono", sans-serif;
-    min-width: 635px;
   }
   .window.mobile {
     height: 100%;
@@ -65,9 +63,12 @@
     margin: 0;
   }
 
+  .desktop .header {
+    border-radius: 15px 15px 0px 0px;
+  }
+
   .header {
     background-color: rgba(59, 54, 62);
-    border-radius: 15px 15px 0px 0px;
     height: 30px;
     text-align: center;
     display: flex;
@@ -116,6 +117,7 @@
     height: 80%;
     width: 50%;
     min-width: 700px;
+    border-radius: 15px;
   }
 
   .page {

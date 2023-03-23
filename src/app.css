@@ -1,8 +1,8 @@
 body {
     width: auto;
-    height: 100vh;
     overflow: hidden;
+    height:100vh;
     background-image: url(/src/lib/images/OS-X-Yosemite.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     margin: 0
 }
