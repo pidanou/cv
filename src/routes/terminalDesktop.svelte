@@ -3,7 +3,7 @@
   import Pida from "$lib/components/About.svelte";
   import Prompt from "$lib/components/Prompt.svelte";
   import Result from "$lib/components/Result.svelte";
-  import Clone from "$lib/components/Asciiart-clone.svelte";
+  import Clone from "$lib/components/Clone.svelte";
   import Blank from "$lib/components/Blank.svelte";
   import Jobs from "$lib/components/Jobs.svelte";
   import Education from "$lib/components/Education.svelte";

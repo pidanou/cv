@@ -4,13 +4,25 @@
 
 {#if show}
   <div class="container">
-    <pre>
+    <pre class="ascii">
       
-    ██████  ██ ██████   █████  ███    ██  ██████  ██    ██     ███████  █████  ███    ██  ██████  
-    ██   ██ ██ ██   ██ ██   ██ ████   ██ ██    ██ ██    ██     ██      ██   ██ ████   ██ ██       
-    ██████  ██ ██   ██ ███████ ██ ██  ██ ██    ██ ██    ██     █████   ███████ ██ ██  ██ ██   ███ 
-    ██      ██ ██   ██ ██   ██ ██  ██ ██ ██    ██ ██    ██     ██      ██   ██ ██  ██ ██ ██    ██ 
-    ██      ██ ██████  ██   ██ ██   ████  ██████   ██████      ███████ ██   ██ ██   ████  ██████                                                   
+      /$$$$$$$  /$$$$$$ /$$$$$$$   /$$$$$$  /$$   /$$  /$$$$$$  /$$   /$$
+      | $$__  $$|_  $$_/| $$__  $$ /$$__  $$| $$$ | $$ /$$__  $$| $$  | $$
+      | $$  \ $$  | $$  | $$  \ $$| $$  \ $$| $$$$| $$| $$  \ $$| $$  | $$
+      | $$$$$$$/  | $$  | $$  | $$| $$$$$$$$| $$ $$ $$| $$  | $$| $$  | $$
+      | $$____/   | $$  | $$  | $$| $$__  $$| $$  $$$$| $$  | $$| $$  | $$
+      | $$        | $$  | $$  | $$| $$  | $$| $$\  $$$| $$  | $$| $$  | $$
+      | $$       /$$$$$$| $$$$$$$/| $$  | $$| $$ \  $$|  $$$$$$/|  $$$$$$/
+      |__/      |______/|_______/ |__/  |__/|__/  \__/ \______/  \______/ 
+
+      /$$$$$$$$  /$$$$$$  /$$   /$$  /$$$$$$ 
+      | $$_____/ /$$__  $$| $$$ | $$ /$$__  $$
+      | $$      | $$  \ $$| $$$$| $$| $$  \__/
+      | $$$$$   | $$$$$$$$| $$ $$ $$| $$ /$$$$
+      | $$__/   | $$__  $$| $$  $$$$| $$|_  $$
+      | $$      | $$  | $$| $$\  $$$| $$  \ $$
+      | $$$$$$$$| $$  | $$| $$ \  $$|  $$$$$$/
+      |________/|__/  |__/|__/  \__/ \______/                                                  
   
     Hey! I'm Pidanou Eang, a dedicated and skilled Cloud Engineer with a passion
     for delivering reliable and scalable cloud solutions. With over Three years of
@@ -22,7 +34,7 @@
     results. I have a strong track record of delivering complex cloud projects on
     time and within budget, and I am committed to continuously learning and staying
     up-to-date with the latest cloud technologies and trends.
-    <p>Thanks ChatGPT for the introduction</p>
+    <p id="small">Thanks ChatGPT for the introduction</p>
   </pre>
   </div>
 {/if}
@@ -32,7 +44,7 @@
     margin: 0;
   }
 
-  p {
+  #small {
     display: inline;
     font-size: 0.7em;
   }

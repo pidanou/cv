@@ -5,11 +5,14 @@
 {#if show}
   <div>
     <pre>
-      ███████ ███    ███ ██████  ██       ██████  ██    ██ ███    ███ ███████ ███    ██ ████████ 
-      ██      ████  ████ ██   ██ ██      ██    ██  ██  ██  ████  ████ ██      ████   ██    ██    
-      █████   ██ ████ ██ ██████  ██      ██    ██   ████   ██ ████ ██ █████   ██ ██  ██    ██    
-      ██      ██  ██  ██ ██      ██      ██    ██    ██    ██  ██  ██ ██      ██  ██ ██    ██    
-   __ ███████ ██      ██ ██      ███████  ██████     ██    ██      ██ ███████ ██   ████    ██  
+       /$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$ 
+       |__  $$ /$$__  $$| $$__  $$ /$$__  $$
+          | $$| $$  \ $$| $$  \ $$| $$  \__/
+          | $$| $$  | $$| $$$$$$$ |  $$$$$$ 
+     /$$  | $$| $$  | $$| $$__  $$ \____  $$
+    | $$  | $$| $$  | $$| $$  \ $$ /$$  \ $$
+    |  $$$$$$/|  $$$$$$/| $$$$$$$/|  $$$$$$/
+   __\______/  \______/ |_______/  \______/                                                                                                                    
   |    
   o-> 2022 - present      <strong>Smart-Chain, devops, Paris, France </strong>
   |                         |_ Deployment and monitoring of blockchain nodes services
@@ -18,10 +21,10 @@
   |                         |_ Cloud platform administrator
   |       
   o-> 2020 - 2022         <strong>Wavestone, consultant, Paris, France </strong>
-  |                         |_ Cloud Engineer        : Migration and deployment of infrastructure to AWS
-  |                         |_ Cloud Engineer        : Conception and deployment of an SSO platform
-  |                         |_ Production Owner      : Deployment of backup and archive solution
-  |                         |_ Cloud Data Engineer   : Development of a big data ETL pipeline on AWS
+  |                         |_ Cloud Engineer: Cloud Infrastructure Migration
+  |                         |_ Cloud Engineer: Conception and deployment of an SSO platform
+  |                         |_ Production Owner: Deployment of backup and archive solution
+  |                         |_ Cloud Data Engineer: Development of a big data ETL pipeline
   |
   o-> 2020                <strong
         >Wavestone, IT and Data Architect intern, Paris, France</strong
