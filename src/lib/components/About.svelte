@@ -22,6 +22,7 @@
     results. I have a strong track record of delivering complex cloud projects on
     time and within budget, and I am committed to continuously learning and staying
     up-to-date with the latest cloud technologies and trends.
+    <p>Thanks ChatGPT for the introduction</p>
   </pre>
   </div>
 {/if}
@@ -29,5 +30,10 @@
 <style>
   pre {
     margin: 0;
+  }
+
+  p {
+    display: inline;
+    font-size: 0.7em;
   }
 </style>
