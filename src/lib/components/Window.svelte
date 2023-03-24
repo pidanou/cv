@@ -19,7 +19,7 @@
 
 <MediaQuery query="(max-width: 1023px)" let:matches>
   {#if matches}
-    <div class="window mobile" style="height: {innerHeight}px;">
+    <div class="window mobile" style="height: {innerHeight}px; min-width:650px">
       <div class="header">
         <div class="tab"><div id="tabName">{tabName}</div></div>
         <div class="tributton">
@@ -139,7 +139,6 @@
     display: flex;
     flex-direction: column-reverse;
     overflow-y: auto;
-    overflow-x: hidden;
     -ms-overflow-style: none; /* IE and Edge */
   }
 
