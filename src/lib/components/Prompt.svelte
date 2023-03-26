@@ -12,10 +12,6 @@
 
   let next = false;
 
-  export function test(key) {
-    console.log(key);
-  }
-
   export function handleKeyDown(e) {
     if (e.key != "Enter") {
       return;

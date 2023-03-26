@@ -21,7 +21,11 @@
     <div class="window mobile" style="height: {innerHeight}px; min-width:770px">
       <div class="header">
         <div class="tab">
-          <div id="tabName">
+          <div
+            id="tabName"
+            use:press={{ timeframe: 1000, triggerBeforeFinished: true }}
+            on:press={fastForward}
+          >
             {tabName}
           </div>
         </div>
@@ -31,11 +35,7 @@
           <button class="green" />
         </div>
       </div>
-      <div
-        class="page"
-        use:press={{ timeframe: 1000, triggerBeforeFinished: true }}
-        on:press={fastForward}
-      >
+      <div class="page">
         <slot />
       </div>
     </div>

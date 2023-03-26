@@ -18,6 +18,7 @@
 
   function passTap(e) {
     component.handleKeyDown({ key: "Enter" });
+    console.log("tap");
   }
 
   function fastForwardKey(e) {
@@ -31,7 +32,7 @@
 
 <svelte:window on:keydown={fastForwardKey} />
 
-<div class="container" use:tap on:tap={passTap}>
+<div class="container" use:tap={{ timeframe: 100 }} on:tap={passTap}>
   <WindowBody {tabName} bind:counter>
     <Blank />
     {#if counter >= 18}
@@ -240,7 +241,7 @@
       />
       <Result
         show={true}
-        result="To skip animations press S or long press on the screen "
+        result="To skip animations press S or long press on 'pidanoueang' "
       />
       <Result
         show={true}
