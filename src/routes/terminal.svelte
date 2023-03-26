@@ -9,6 +9,7 @@
   import Education from "$lib/components/Education.svelte";
   import Skills from "$lib/components/Skills.svelte";
   import Socials from "$lib/components/Socials.svelte";
+  import Tutorial from "$lib/components/Tutorial.svelte";
 
   import { tap } from "svelte-gestures";
 
@@ -18,7 +19,6 @@
 
   function passTap(e) {
     component.handleKeyDown({ key: "Enter" });
-    console.log("tap");
   }
 
   function fastForwardKey(e) {
@@ -32,7 +32,7 @@
 
 <svelte:window on:keydown={fastForwardKey} />
 
-<div class="container" use:tap={{ timeframe: 100 }} on:tap={passTap}>
+<div class="container" use:tap={{ timeframe: 300 }} on:tap={passTap}>
   <WindowBody {tabName} bind:counter>
     <Blank />
     {#if counter >= 18}
@@ -239,14 +239,7 @@
         bind:counter
         bind:this={component}
       />
-      <Result
-        show={true}
-        result="To skip animations press S or long press on 'pidanoueang' "
-      />
-      <Result
-        show={true}
-        result="To read me, press Enter or Tap to continue"
-      />{/if}
+      <Tutorial bind:counter />{/if}
   </WindowBody>
 </div>
 
