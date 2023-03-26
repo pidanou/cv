@@ -6,6 +6,7 @@
   export let counter;
 
   $: innerHeight = 0;
+  $: innerWidth = 0;
 
   export let tabName;
 
@@ -14,11 +15,14 @@
   }
 </script>
 
-<svelte:window bind:innerHeight />
+<svelte:window bind:innerHeight bind:innerWidth />
 
 <MediaQuery query="(max-width: 1023px)" let:matches>
   {#if matches}
-    <div class="window mobile" style="height: {innerHeight}px; min-width:770px">
+    <div
+      class="window mobile"
+      style="height: {innerHeight}px; width:{innerWidth}px"
+    >
       <div class="header">
         <div class="tab">
           <div
