@@ -6,14 +6,14 @@
   <div>
     <pre>
        /$$$$$  /$$$$$$  /$$$$$$$   /$$$$$$ 
-       |__  $$ /$$__  $$| $$__  $$ /$$__  $$
-          | $$| $$  \ $$| $$  \ $$| $$  \__/
-          | $$| $$  | $$| $$$$$$$ |  $$$$$$ 
-     /$$  | $$| $$  | $$| $$__  $$ \____  $$
-    | $$  | $$| $$  | $$| $$  \ $$ /$$  \ $$
-    |  $$$$$$/|  $$$$$$/| $$$$$$$/|  $$$$$$/
-   __\______/  \______/ |_______/  \______/                                                                                                                    
-  |    
+      |__  $$ /$$__  $$| $$__  $$ /$$__  $$
+         | $$| $$  \ $$| $$  \ $$| $$  \__/
+         | $$| $$  | $$| $$$$$$$ |  $$$$$$ 
+    /$$  | $$| $$  | $$| $$__  $$ \____  $$
+   | $$  | $$| $$  | $$| $$  \ $$ /$$  \ $$
+   |  $$$$$$/|  $$$$$$/| $$$$$$$/|  $$$$$$/
+    \______/  \______/ |_______/  \______/                                                                                                                    
+   <pre class="text">     
   o-> 2022 - present      <strong>Smart-Chain, devops, Paris, France </strong>
   |                         |_ Deployment and monitoring of blockchain nodes services
   |                         |_ CICD pipeline development
@@ -27,13 +27,13 @@
   |                         |_ Cloud Data Engineer: Development of a big data ETL pipeline
   |
   o-> 2020                <strong
-        >Wavestone, IT and Data Architect intern, Paris, France</strong
-      >
+          >Wavestone, IT and Data Architect intern, Paris, France</strong
+        >
   |                         |_ Blockchain : Smart contracts for companies
   |
   o-> 2018                <strong>KEOLIS, product owner, Paris, France</strong>
                             |_ Design, development and deployment of mobile and web apps
-
+</pre>
 </pre>
   </div>
 {/if}
@@ -41,5 +41,10 @@
 <style>
   strong {
     color: rgb(241, 168, 58);
+  }
+
+  .text {
+    line-height: 1.6em;
+    font-size: 0.875rem;
   }
 </style>

@@ -1,7 +1,9 @@
 <script>
   import Typewriter from "svelte-typewriter/Typewriter.svelte";
-  export let show;
+
   export let counter;
+
+  export let show;
 
   function changeState() {
     counter++;

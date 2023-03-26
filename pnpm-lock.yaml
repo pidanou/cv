@@ -12,6 +12,7 @@ specifiers:
   prettier-plugin-svelte: ^2.8.1
   scrollmagic: ^2.0.8
   svelte: ^3.54.0
+  svelte-gestures: ^1.4.1
   svelte-media-queries: ^1.5.4
   svelte-typewriter: ^3.1.4
   vite: ^4.0.0
@@ -20,6 +21,7 @@ dependencies:
   '@neodrag/svelte': 2.0.3
   gsap: 3.11.5
   scrollmagic: 2.0.8
+  svelte-gestures: 1.4.1
   svelte-media-queries: 1.5.4
   svelte-typewriter: 3.1.4_svelte@3.57.0
 
@@ -1381,6 +1383,10 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /svelte-gestures/1.4.1:
+    resolution: {integrity: sha512-TAmfcz+DgdfrRDFSQ9UsXxhqDjQR7LaUaALauqITaTCVSHPWXIZ9WSBPP6DrXh9MYqgVZwy85wJdv7NQPwsZfA==}
+    dev: false
 
   /svelte-hmr/0.15.1_svelte@3.57.0:
     resolution: {integrity: sha512-BiKB4RZ8YSwRKCNVdNxK/GfY+r4Kjgp9jCLEy0DuqAKfmQtpL38cQK3afdpjw4sqSs4PLi3jIPJIFp259NkZtA==}

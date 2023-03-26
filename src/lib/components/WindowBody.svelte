@@ -1,34 +1,41 @@
 <script>
   import { draggable } from "@neodrag/svelte";
   import MediaQuery from "svelte-media-queries";
+  import { press } from "svelte-gestures";
 
-  $: outerWidth = 0;
-  $: innerWidth = 0;
-  $: outerHeight = 0;
+  export let counter;
+
   $: innerHeight = 0;
 
   export let tabName;
+
+  function fastForward(e) {
+    counter = 100;
+  }
 </script>
 
-<svelte:window
-  bind:innerWidth
-  bind:outerWidth
-  bind:innerHeight
-  bind:outerHeight
-/>
+<svelte:window bind:innerHeight />
 
 <MediaQuery query="(max-width: 1023px)" let:matches>
   {#if matches}
-    <div class="window mobile" style="height: {innerHeight}px; min-width:750px">
+    <div class="window mobile" style="height: {innerHeight}px; min-width:770px">
       <div class="header">
-        <div class="tab"><div id="tabName">{tabName}</div></div>
+        <div class="tab">
+          <div id="tabName">
+            {tabName}
+          </div>
+        </div>
         <div class="tributton">
           <button class="red" />
           <button class="yellow" />
           <button class="green" />
         </div>
       </div>
-      <div class="page">
+      <div
+        class="page"
+        use:press={{ timeframe: 1000, triggerBeforeFinished: true }}
+        on:press={fastForward}
+      >
         <slot />
       </div>
     </div>
@@ -38,7 +45,7 @@
 <MediaQuery query="(min-width: 1024px)" let:matches>
   {#if matches}
     <div
-      use:draggable={({ cancel: ".page" }, { bounds: "parent" })}
+      use:draggable={{ cancel: ".page", bounds: "body" }}
       class="window desktop"
     >
       <div class="header">
@@ -128,7 +135,7 @@
   .window.desktop {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 15px;
-    height: 80%;
+    height: 100%;
     width: 1024px;
     border-radius: 15px;
     padding-bottom: 2em;

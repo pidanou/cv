@@ -34,7 +34,7 @@
 
   .folders {
     margin-left: 0.8em;
-    color: rgb(33, 247, 62);
+    color: rgb(10, 92, 21);
     font-weight: bold;
     white-space: nowrap;
   }
