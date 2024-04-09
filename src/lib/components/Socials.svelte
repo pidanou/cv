@@ -18,7 +18,7 @@
   |
   o-> <a href="https://www.strava.com/athletes/5059983">Strava</a>
   |
-  o-> <a=href="contact@pidanoueang.com">contact@pidanoueang.com</a>
+  o-> <a href="contact@pidanoueang.com">contact@pidanoueang.com</a>
  
 </pre>
   </div>
